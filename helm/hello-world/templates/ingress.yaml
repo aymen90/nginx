@@ -15,7 +15,11 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
+<<<<<<< HEAD
   namespace: helm-ns
+=======
+  namespace: helm-namespace
+>>>>>>> deca9e0e879364619a06a0a32045a2bdc42d98f0
   name: {{ $fullName }}
   labels:
     {{- include "hello-world.labels" . | nindent 4 }}
