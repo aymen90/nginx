@@ -15,6 +15,7 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
+  namespace: helm-namespace
   name: {{ $fullName }}
   labels:
     {{- include "hello-world.labels" . | nindent 4 }}
